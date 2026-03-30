@@ -92,11 +92,12 @@ export const fetchMovies = async () => {
 
 ### Home Screen
 
-![Home](assets/screenshots-layout/photo_5_2026-03-30_20-38-55.jpg)
+<img src="assets/screenshots-layout/photo_5_2026-03-30_20-38-55.jpg" width="300" alt="Home Screen" />
 
 ### Movie Details
 
-![Details](assets/screenshots-layout/photo_2_2026-03-30_20-38-55.jpg)
+<img src="assets/screenshots-layout/photo_2_2026-03-30_20-38-55.jpg" width="300" alt="Movie Details Screen" />
+<img src="assets/screenshots-layout/photo_3_2026-03-30_20-38-55.jpg" width="300" alt="Movie Details Screen" />
 
 ---
 
