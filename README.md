@@ -1,50 +1,123 @@
-# Welcome to your Expo app 👋
+# 📽️ Mobile Movie App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## 📌 Overview
 
-## Get started
+**Mobile Movie App** is a cross‑platform mobile application built with **React Native** and **Expo**, allowing users to browse movies, view details, and access various navigation and API integration features.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 🛠 Tech Stack
 
-2. Start the app
+| Technology                  | Purpose                                  |
+| --------------------------- | ---------------------------------------- |
+| **React Native**            | Framework for cross‑platform mobile apps |
+| **Expo**                    | Tool for easy development & debugging    |
+| **JavaScript / TypeScript** | Programming languages used               |
+| **React Navigation**        | Screen navigation management             |
+| **TMDB API** *(optional)*   | External movie data source               |
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 📁 Project Structure
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+/
+├─ app/                      # Main application folder
+├─ assets/                   # Static files (images, fonts, etc.)
+├─ components/               # Reusable UI components
+├─ constants/                # Constants, colors, configuration
+├─ interfaces/               # TypeScript interfaces
+├─ services/                 # API calls & backend logic
+├─ types/                    # Custom TypeScript types
+├─ README.md
+├─ app.json                  # Expo configuration
+├─ babel.config.js           # Babel compiler configuration
+├─ package.json              # Dependencies & scripts
+└─ …
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## 🚀 Quick Start
 
-To learn more about developing your project with Expo, look at the following resources:
+### 1) Install dependencies
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+git clone https://github.com/nikolas-gou/mobile-movie-app.git
+cd mobile-movie-app
+npm install
+```
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+### 2) Run the app
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+npx expo start
+```
+
+After running:
+
+* The Metro bundler will open
+* You can run the app on an Android/iOS emulator
+* Or via **Expo Go** on your mobile device
+
+---
+
+## 🧠 Architecture & Code
+
+### 📌 Routing / Navigation
+
+Navigation is handled with **React Navigation** (Stack / Tabs), separating screens into files corresponding to routes for easy expansion.
+
+### 🧩 Components
+
+Reusable UI components are in the `components/` folder.
+Each component handles UI logic and uses props to receive data.
+
+### 🔁 Services & API
+
+The `services/` folder contains functions for API calls, e.g.:
+
+```js
+export const fetchMovies = async () => {
+  const response = await fetch(/* TMDB API endpoint */);
+  return await response.json();
+};
+```
+
+---
+
+## 📷 Screenshots
+
+### Home Screen
+
+![Home](assets/screenshots-layout/photo_5_2026-03-30_20-38-55.jpg)
+
+### Movie Details
+
+![Details](assets/screenshots-layout/photo_2_2026-03-30_20-38-55.jpg)
+
+---
+
+## 🧪 Suggested Improvements
+
+* **Search functionality** with live suggestions
+* **Movie details screen** with trailers and ratings
+* **Favorites list** (local or backend)
+* **Offline caching**
+
+---
+
+## 📄 Contributing
+
+1. Fork the repository
+2. Create a new branch for your feature
+3. Commit & push your changes
+4. Submit a pull request
+
+---
+
+## 💬 Support / Contact
+
+For feedback or documentation improvements, open an issue on GitHub.
